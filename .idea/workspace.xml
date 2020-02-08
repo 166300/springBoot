@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08ba2c19-33d5-4678-b7fa-30e50e32ae85" name="Default Changelist" comment="项目逆向完成...">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-demo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-demo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-admin-web/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-admin-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-admin-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-admin-web/gmall-admin-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-oms/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-oms/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-oms/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-oms/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-oms/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-pms/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-pms/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-pms/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-search/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-search/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-search/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-search/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-search/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-search/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-shop-portal/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-shop-portal/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-shop-portal/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-shop-portal/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-shop-portal/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-shop-portal/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-ums/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-ums/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-ums/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-ums/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-common/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-api/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-pms/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-ums/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-oms/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-sms/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-admin-web/target/" />
+    <ignored path="gmall-admin-web/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="gmall-admin-web/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="gmall-admin-web/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored mask="*.gitignore" />
+    <ignored mask="mvnw" />
+    <ignored mask="*.cmd" />
+    <ignored path="gmall-oms/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="gmall-oms/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="gmall-oms/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path=".idea/compiler.xml" />
+    <ignored path=".idea/encodings.xml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/vcs.xml" />
+    <ignored path="gmall-pms/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="gmall-pms/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="gmall-pms/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="gmall-sms/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="gmall-sms/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="gmall-sms/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="gmall-ums/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="gmall-ums/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="gmall-ums/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="$PROJECT_DIR$/gmall-mbg/target/" />
+    <ignored path="$PROJECT_DIR$/es-demo/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-search/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-shop-portal/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/service/impl/ProductCategoryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-pms/src/test/java/com/atbm/gmall/pms/GmallPmsApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-ums/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="30" selection-start-line="30" selection-end-line="40" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-pms/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="639">
+              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/pms/service/ProductCategoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/pms/controller/PmsProductCategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="85" column="95" selection-start-line="85" selection-start-column="95" selection-end-line="85" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/service/impl/SearchProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-search/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>category</find>
+      <find>h</find>
+      <find>对象</find>
+      <find>redis</find>
+      <find>world</find>
+      <find>刚才</find>
+      <find>当前线程</find>
+      <find>商品</find>
+      <find>失败</find>
+      <find>成功</find>
+      <find>error</find>
+      <find>query</find>
+      <find>Catelog3</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/pms/controller/PmsProductAttributeController.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/to/OssPolicyResult.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/oss/component/OssCompent.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/oss/controller/OssController.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/ums/controller/UmsAdminController.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/pms/controller/PmsProductCategoryController.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/gmall-admin-web.iml" />
+        <option value="$PROJECT_DIR$/es-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/es-demo/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/es-demo/src/test/java/com/atbm/es/esdemo/EsDemoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/pms/controller/PmsProductController.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/to/es/EsProductAttributeValue.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/to/es/EsProduct.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/pms/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/ProductAttributeValueMapper.java" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductAttributeValueMapper.xml" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/to/es/EsSkuproductIofn.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/constant/EsConstant.java" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/vo/search/SearchResponseAttrVo.java" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/vo/search/SearchResponse.java" />
+        <option value="$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/GmallSearchApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-search/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/search/SearchProductService.java" />
+        <option value="$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/SearchProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-search/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/gmall-search/src/test/java/com/atbm/gmall/search/GmallSearchApplicationTests.java" />
+        <option value="$PROJECT_DIR$/gmall-shop-portal/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gmall-shop-portal/src/main/java/com/atbm/gmall/portal/ProductSearchController.java" />
+        <option value="$PROJECT_DIR$/gmall-shop-portal/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-shop-portal/src/main/java/com/atbm/gmall/portal/config/GmallSwagger2Config.java" />
+        <option value="$PROJECT_DIR$/gmall-shop-portal/src/main/java/com/atbm/gmall/portal/controller/ProductSearchController.java" />
+        <option value="$PROJECT_DIR$/gmall-shop-portal/src/main/java/com/atbm/gmall/portal/GmallShopPortalApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/service/SearchProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-search/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/service/impl/SearchProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-ums/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-ums/src/main/java/com/atbm/gmall/ums/service/impl/AdminLoginLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/GmallAdminWebApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-ums/src/main/java/com/atbm/gmall/ums/GmallUmsApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-ums/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-admin-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/GmallPmsApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/service/impl/ProductCategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductCategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/gmall-common/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/test/java/com/atbm/gmall/pms/GmallPmsApplicationTests.java" />
+        <option value="$PROJECT_DIR$/gmall-pms/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-pms/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-16" />
+    <option name="y" value="-15" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="false" />
+      <showExcludedFiles Scope="true" ProjectPane="true" />
+      <hideEmptyPackages ProjectPane="false" />
+      <abbreviatePackageNames ProjectPane="true" />
+      <autoscrollToSource ProjectPane="false" />
+      <foldersAlwaysOnTop value="false" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gmall.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall.parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmall.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall.parent" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-pms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmall.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall.parent" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-ums" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/service" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.30689654" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-shop-portal\src\main\java\com\atbm\gmall\portal\controller" />
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-search\src\main\java\com\atbm\gmall\search" />
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-pms\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.atbm.gmall.pms" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atbm.gmall.portal.config" />
+      <recent name="com.atbm.gmall.ums.config" />
+      <recent name="com.atbm.gmall.to" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-search\src\main\java\com\atbm\gmall\search\service" />
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-shop-portal\src\main\java\com\atbm\gmall\portal" />
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-search\src\main\resources" />
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-api\src\main\java\com\atbm\gmall\vo\search" />
+      <recent name="D:\App\IDEA\BM_fhsl\springBoot\gmall.parent\gmall-api\src\main\java\com\atbm\gmall\to\es" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.20225988" />
+  </component>
+  <component name="RunManager" selected="JUnit.GmallPmsApplicationTests.contextLoads">
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="GmallPmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallUmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallAdminWebApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallSearchApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallShopPortalApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="springBoot" type="CompoundRunConfigurationType">
+      <toRun name="GmallPmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallUmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallAdminWebApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallSearchApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="GmallShopPortalApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EsDemoApplicationTests.query" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es-demo" />
+      <option name="PACKAGE_NAME" value="com.atbm.es.esdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.atbm.es.esdemo.EsDemoApplicationTests" />
+      <option name="METHOD_NAME" value="query" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallPmsApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmall-pms" />
+      <option name="PACKAGE_NAME" value="com.atbm.gmall.pms" />
+      <option name="MAIN_CLASS_NAME" value="com.atbm.gmall.pms.GmallPmsApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallSearchApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmall-search" />
+      <option name="PACKAGE_NAME" value="com.atbm.gmall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.atbm.gmall.search.GmallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallSearchApplicationTests.dslTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmall-search" />
+      <option name="PACKAGE_NAME" value="com.atbm.gmall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.atbm.gmall.search.GmallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="dslTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallSearchApplicationTests.searchSourceBuilder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmall-search" />
+      <option name="PACKAGE_NAME" value="com.atbm.gmall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.atbm.gmall.search.GmallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="searchSourceBuilder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="es-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.es.esdemo.EsDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallAdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-admin-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.admin.GmallAdminWebApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallOmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-oms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.oms.GmallOmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallPmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-pms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.pms.GmallPmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.search.GmallSearchApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallShopPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-shop-portal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.portal.GmallShopPortalApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallSmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-sms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.sms.GmallSmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallUmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-ums" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atbm.gmall.ums.GmallUmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx200m -Xms50m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Compound.springBoot" />
+      <item itemvalue="JUnit.EsDemoApplicationTests.query" />
+      <item itemvalue="JUnit.GmallSearchApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.GmallSearchApplicationTests.searchSourceBuilder" />
+      <item itemvalue="JUnit.GmallSearchApplicationTests.dslTest" />
+      <item itemvalue="Spring Boot.GmallAdminWebApplication" />
+      <item itemvalue="Spring Boot.GmallOmsApplication" />
+      <item itemvalue="Spring Boot.GmallPmsApplication" />
+      <item itemvalue="Spring Boot.GmallSmsApplication" />
+      <item itemvalue="Spring Boot.GmallUmsApplication" />
+      <item itemvalue="Spring Boot.EsDemoApplication" />
+      <item itemvalue="Spring Boot.GmallSearchApplication" />
+      <item itemvalue="Spring Boot.GmallShopPortalApplication" />
+      <item itemvalue="JUnit.GmallPmsApplicationTests.contextLoads" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GmallPmsApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.GmallSearchApplicationTests.dslTest" />
+        <item itemvalue="JUnit.GmallSearchApplicationTests.searchSourceBuilder" />
+        <item itemvalue="JUnit.GmallSearchApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.EsDemoApplicationTests.query" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 00h 18m 06s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 00h 23m 34s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 00h 26m 01s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 01h 07m 00s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 01h 29m 35s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 15h 08m 31s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 15h 54m 34s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallSearchApplicationTests_dslTest - 2020.02.08 at 15h 59m 55s.xml">
+      <configuration name="GmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallPmsApplicationTests_contextLoads - 2020.02.08 at 20h 09m 14s.xml">
+      <configuration name="GmallPmsApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GmallPmsApplicationTests_contextLoads - 2020.02.08 at 20h 13m 09s.xml">
+      <configuration name="GmallPmsApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1858" height="1096" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24638487" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49721915" weight="0.35446987" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991684" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run Dashboard" order="6" sideWeight="0.49777532" weight="0.4189189" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32952183" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5022247" side_tool="true" weight="0.34615386" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32952183" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.6081081" />
+      <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32952183" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24972191" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.34705228" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="BPMNPalette" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="项目结构创建完成..." />
+    <MESSAGE value="项目逆向完成..." />
+    <option name="LAST_COMMIT_MESSAGE" value="项目逆向完成..." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/service/impl/SearchProductServiceImpl.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/ums/controller/UmsMemberLevelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/ums/controller/UmsAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-ums/src/main/java/com/atbm/gmall/ums/service/impl/AdminLoginLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-ums/src/main/java/com/atbm/gmall/ums/GmallUmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-ums/src/main/java/com/atbm/gmall/ums/mapper/AdminLoginLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-ums/src/main/java/com/atbm/gmall/ums/mapper/xml/AdminLoginLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-ums/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/config/GmallSwagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/pms/controller/PmsProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductFullReductionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/sharding-jdbc.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/GmallAdminWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/vo/product/PmsProductCategoryWithChildrenItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/AlbumMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/AlbumPicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/BrandMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/CommentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductVertifyRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductOperateLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/pms/entity/ProductCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1011">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/GmallPmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/AlbumMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/SkuStockMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/SkuStockMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductLadderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/ProductLadderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/ProductFullReductionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductAttributeValueMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-514">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/ProductAttributeValueMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/config/PmsRedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/config/PmsDataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="214" column="31" selection-start-line="214" selection-start-column="31" selection-end-line="214" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12171#12172#0" expanded="true" />
+            <element signature="e#12222#12223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/xml/ProductCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/mapper/ProductCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/java/com/atbm/gmall/admin/pms/controller/PmsProductCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="85" column="95" selection-start-line="85" selection-start-column="95" selection-end-line="85" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/atbm/gmall/pms/service/ProductCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-ums/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="30" selection-start-line="30" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/java/com/atbm/gmall/pms/service/impl/ProductCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/test/java/com/atbm/gmall/pms/GmallPmsApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-pms/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-search/src/main/java/com/atbm/gmall/search/service/impl/SearchProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-search/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-admin-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (gmall-admin-web)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.30689654" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>gmall-search</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.30689654" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.30689654" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
