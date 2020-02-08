@@ -19,12 +19,12 @@ class GmallPmsApplicationTests {
     void contextLoads() {
 /*        Product byId = productService.getById(1);
         System.out.println(byId.getName());*/
-/*        //测试主从库分工
+        //测试主从库分工
         //更新
         Brand brand = new Brand();
         brand.setName("哈哈");
         brandService.save(brand);
-        System.out.println("OK");*/
+        System.out.println("OK");
 
 /*        //查询
         Brand byId = brandService.getById(53);

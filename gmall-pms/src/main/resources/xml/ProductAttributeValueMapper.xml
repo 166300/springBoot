@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atbm.gmall.pms.mapper.ProductAttributeValueMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, product_id, product_attribute_id, value
+    </sql>
+
+    <!--List<EsProductAttributeValue> selectProdectBaseAttrAndValue(Long id);-->
+    <select id="selectProdectBaseAttrAndValue" resultType="com.atbm.gmall.to.es.EsProductAttributeValue">
+        select pav.*,pa.`name`,pa.type FROM  pms_product_attribute_value pav
+                LEFT JOIN pms_product_attribute pa
+                on pa.id=pav.product_attribute_id
+        where pav.product_id=#{id} AND pa.type=1
+    </select>
+
+    <!--List<ProductAttribute> selectProdectSaleAttrName(Long id);-->
+    <select id="selectProdectSaleAttrName" resultType="com.atbm.gmall.pms.entity.ProductAttribute">
+        SELECT pa.* FROM pms_product_attribute pa
+        WHERE pa.product_attribute_category_id =
+        (
+            select pa.product_attribute_category_id
+            FROM  pms_product_attribute_value pav
+                    LEFT JOIN pms_product_attribute pa
+                    on pa.id=pav.product_attribute_id
+            where pav.product_id=#{id} AND pa.type=0 LIMIT 1
+        )and type=0 ORDER BY pa.sort DESC
+    </select>
+</mapper>
