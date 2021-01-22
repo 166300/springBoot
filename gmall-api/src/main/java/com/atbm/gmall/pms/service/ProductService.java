@@ -1,6 +1,8 @@
 package com.atbm.gmall.pms.service;
 
 import com.atbm.gmall.pms.entity.Product;
+import com.atbm.gmall.pms.entity.SkuStock;
+import com.atbm.gmall.to.es.EsProduct;
 import com.atbm.gmall.vo.PageInfoVo;
 import com.atbm.gmall.vo.product.PmsProductParam;
 import com.atbm.gmall.vo.product.PmsProductQueryParam;
@@ -38,4 +40,23 @@ public interface ProductService extends IService<Product> {
     * 批量上下架
     * */
     void updatePublishStatus(List<Long> ids, Integer publishStatus);
+
+    EsProduct productAllInfo(Long id);
+
+    EsProduct productSkuInFo(Long id);
+
+    void deleteProdect(List<Long> ids, Integer deleteStatus);
+
+    void updateNewStatus(List<Long> ids, Integer newStatus);
+
+    void updateRecommendStatus(List<Long> ids, Integer recommendStatus);
+
+    Product getUpdateInfo(Long id);
+
+    void update(Long id, PmsProductParam productParam);
+
+
+    Product productInfo2(Long id);
+
+    SkuStock skuInfoById(Long skuId);
 }

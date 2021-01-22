@@ -48,7 +48,7 @@ public class DataVaildAspect {
         try {
 //            System.out.println("前置");
             log.debug("校验切面介入工作...");
-            //需要进入的方法
+            //需要进入的方法-->这个就是目标方法-->目标所需参数
             proceed = point.proceed(point.getArgs());
             log.debug("校验切面放行...");
 //            System.out.println("返回");

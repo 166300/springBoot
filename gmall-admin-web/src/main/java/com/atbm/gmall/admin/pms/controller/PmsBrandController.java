@@ -38,7 +38,7 @@ public class PmsBrandController {
         CommonResult commonResult = new CommonResult();
         //TODO 添加品牌
 
-        return commonResult;
+        return commonResult.success(null);
     }
 
     @ApiOperation(value = "更新品牌")
@@ -50,17 +50,17 @@ public class PmsBrandController {
 
         //TODO 更新品牌
 
-        return commonResult;
+        return commonResult.success(null);
     }
 
     @ApiOperation(value = "删除品牌")
     @GetMapping(value = "/delete/{id}")
     public Object delete(@PathVariable("id") Long id) {
         CommonResult commonResult = new CommonResult();
-
+        brandService.deleteBatch(id);
         //TODO 删除品牌
-
-        return commonResult;
+        brandService.deleteBatch(id);
+        return commonResult.success(null);
     }
 
     @ApiOperation(value = "根据品牌名称分页获取品牌列表")
@@ -83,7 +83,7 @@ public class PmsBrandController {
         //TODO 根据编号查询品牌信息
 
 
-        return commonResult;
+        return commonResult.success(null);
     }
 
     @ApiOperation(value = "批量删除品牌")
@@ -91,9 +91,12 @@ public class PmsBrandController {
     public Object deleteBatch(@RequestParam("ids") List<Long> ids) {
         CommonResult commonResult = new CommonResult();
         //TODO 批量删除品牌
+        ids.forEach((id)->{
+            brandService.deleteBatch(id);
+        });
 
 
-        return commonResult;
+        return commonResult.success(null);
     }
 
     @ApiOperation(value = "批量更新显示状态")
@@ -102,9 +105,10 @@ public class PmsBrandController {
                                    @RequestParam("showStatus") Integer showStatus) {
         CommonResult commonResult = new CommonResult();
         //TODO 批量更新显示状态
-
-
-        return commonResult;
+        ids.forEach((id)->{
+            brandService.updateShowStatus(id,showStatus);
+        });
+        return commonResult.success(null);
     }
 
     @ApiOperation(value = "批量更新厂家制造商状态")
@@ -113,8 +117,9 @@ public class PmsBrandController {
                                       @RequestParam("factoryStatus") Integer factoryStatus) {
         CommonResult commonResult = new CommonResult();
         //TODO 批量更新厂家制造商状态
-
-
-        return commonResult;
+        ids.forEach((id)-> {
+            brandService.updateFactoryStatus(id, factoryStatus);
+        });
+        return commonResult.success(null);
     }
 }

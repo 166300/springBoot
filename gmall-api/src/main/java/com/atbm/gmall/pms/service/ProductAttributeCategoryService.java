@@ -2,7 +2,10 @@ package com.atbm.gmall.pms.service;
 
 import com.atbm.gmall.pms.entity.ProductAttributeCategory;
 import com.atbm.gmall.vo.PageInfoVo;
+import com.atbm.gmall.vo.product.PmsProductAttributeCategoryItem;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -20,4 +23,7 @@ public interface ProductAttributeCategoryService extends IService<ProductAttribu
     * */
 
     PageInfoVo productAttributeCategoryPageInfo(Integer pageNum, Integer pageSize);
+
+
+    List<PmsProductAttributeCategoryItem> getListWithAttr(int i);
 }

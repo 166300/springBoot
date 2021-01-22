@@ -1,6 +1,7 @@
 package com.atbm.gmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.atbm.gmall.pms.entity.Product;
 import com.atbm.gmall.pms.service.ProductService;
 import com.atbm.gmall.to.CommonResult;
 import com.atbm.gmall.vo.PageInfoVo;
@@ -40,13 +41,17 @@ public class PmsProductController {
     @GetMapping(value = "/updateInfo/{id}")
     public Object getUpdateInfo(@PathVariable Long id) {
         //TODO 根据商品id获取商品编辑信息
-        return new CommonResult().success(null);
+        Product product = productService.getUpdateInfo(id);
+        return new CommonResult().success(product);
     }
 
     @ApiOperation("更新商品")
     @PostMapping(value = "/update/{id}")
     public Object update(@PathVariable Long id, @RequestBody PmsProductParam productParam, BindingResult bindingResult) {
+        System.out.println("啊啊啊啊啊啊"+productParam.getProductLadderList());
+        System.out.println(productParam);
         //TODO 更新商品
+        productService.update(id,productParam);
         return new CommonResult().success(null);
     }
 
@@ -88,6 +93,7 @@ public class PmsProductController {
     public Object updateRecommendStatus(@RequestParam("ids") List<Long> ids,
                                         @RequestParam("recommendStatus") Integer recommendStatus) {
         //TODO 批量推荐商品
+        productService.updateRecommendStatus(ids,recommendStatus);
         return new CommonResult().success(null);
     }
 
@@ -96,6 +102,7 @@ public class PmsProductController {
     public Object updateNewStatus(@RequestParam("ids") List<Long> ids,
                                   @RequestParam("newStatus") Integer newStatus) {
         //TODO 批量设为新品
+        productService.updateNewStatus(ids,newStatus);
         return new CommonResult().success(null);
     }
 
@@ -104,6 +111,7 @@ public class PmsProductController {
     public Object updateDeleteStatus(@RequestParam("ids") List<Long> ids,
                                      @RequestParam("deleteStatus") Integer deleteStatus) {
         //TODO 根据商品id获取商品编辑信息
+        productService.deleteProdect(ids,deleteStatus);
         return new CommonResult().success(null);
     }
 }

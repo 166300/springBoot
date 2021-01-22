@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 * */
 @MapperScan(basePackages = "com.atbm.gmall.pms.mapper")
 @SpringBootApplication
-@EnableAspectJAutoProxy(exposeProxy = true)
+@EnableAspectJAutoProxy(exposeProxy = true)//暴露代理对象
 @EnableDubbo
 @EnableTransactionManagement
 public class GmallPmsApplication {

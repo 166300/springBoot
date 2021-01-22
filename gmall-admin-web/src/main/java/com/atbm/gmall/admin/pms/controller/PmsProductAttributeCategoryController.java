@@ -1,9 +1,11 @@
 package com.atbm.gmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.atbm.gmall.pms.entity.ProductAttribute;
 import com.atbm.gmall.pms.service.ProductAttributeCategoryService;
 import com.atbm.gmall.to.CommonResult;
 import com.atbm.gmall.vo.PageInfoVo;
+import com.atbm.gmall.vo.product.PmsProductAttributeCategoryItem;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -65,8 +67,10 @@ public class PmsProductAttributeCategoryController {
     @RequestMapping(value = "/list/withAttr", method = RequestMethod.GET)
     @ResponseBody
     public Object getListWithAttr() {
-
+        System.out.println("OK+++++++++++++++++++++++++");
+        List<PmsProductAttributeCategoryItem> items = productAttributeCategoryService.getListWithAttr(0);
+        System.out.println("OK+++++++++++++++++++++++++"+items);
         //TODO 获取所有商品属性分类及其下属性
-        return new CommonResult().success(null);
+        return new CommonResult().success(items);
     }
 }

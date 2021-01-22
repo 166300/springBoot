@@ -1,8 +1,10 @@
 package com.atbm.gmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.atbm.gmall.pms.entity.ProductCategory;
 import com.atbm.gmall.pms.service.ProductCategoryService;
 import com.atbm.gmall.to.CommonResult;
+import com.atbm.gmall.vo.PageInfoVo;
 import com.atbm.gmall.vo.product.PmsProductCategoryParam;
 import com.atbm.gmall.vo.product.PmsProductCategoryWithChildrenItem;
 import io.swagger.annotations.Api;
@@ -29,6 +31,7 @@ public class PmsProductCategoryController {
     public Object create(@Validated @RequestBody PmsProductCategoryParam productCategoryParam,
                          BindingResult result) {
         //TODO 添加产品分类
+        productCategoryService.create(productCategoryParam);
         return new CommonResult().success(null);
     }
 
@@ -39,6 +42,7 @@ public class PmsProductCategoryController {
                          @RequestBody PmsProductCategoryParam productCategoryParam,
                          BindingResult result) {
         //TODO 修改商品分类
+        productCategoryService.update(id,productCategoryParam);
         return new CommonResult().success(null);
     }
 
@@ -47,21 +51,27 @@ public class PmsProductCategoryController {
     public Object getList(@PathVariable Long parentId,
                           @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
                           @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
+
         //TODO 分页查询商品分类
-        return new CommonResult().success(null);
+        PageInfoVo pageInfoVo = productCategoryService.getList(parentId,pageSize,pageNum);
+        System.out.println(pageInfoVo);
+        return new CommonResult().success(pageInfoVo);
     }
 
     @ApiOperation("根据id获取商品分类")
     @GetMapping(value = "/{id}")
     public Object getItem(@PathVariable Long id) {
         //TODO 根据id获取商品分类
-        return new CommonResult().success(null);
+        ProductCategory items = productCategoryService.getItem(id);
+        return new CommonResult().success(items);
     }
 
     @ApiOperation("删除商品分类")
-    @PostMapping(value = "/delete/{id}")
+    @GetMapping(value = "/delete/{id}")
     public Object delete(@PathVariable Long id) {
+        System.out.println(id+"aaaaaaaaaaaaaaa");
         //TODO 删除商品分类
+        productCategoryService.delete(id);
         return new CommonResult().success(null);
     }
 
@@ -69,6 +79,7 @@ public class PmsProductCategoryController {
     @PostMapping(value = "/update/navStatus")
     public Object updateNavStatus(@RequestParam("ids") List<Long> ids, @RequestParam("navStatus") Integer navStatus) {
         //TODO 修改导航栏显示状态
+        productCategoryService.updateNavStatus(ids,navStatus);
         return new CommonResult().success(null);
     }
 
@@ -76,12 +87,14 @@ public class PmsProductCategoryController {
     @PostMapping(value = "/update/showStatus")
     public Object updateShowStatus(@RequestParam("ids") List<Long> ids, @RequestParam("showStatus") Integer showStatus) {
         //TODO 修改显示状态
+        productCategoryService.updateShowStatus(ids,showStatus);
         return new CommonResult().success(null);
     }
 
     @ApiOperation("查询所有一级分类及子分类[有难度]")
     @GetMapping(value = "/list/withChildren")
     public Object listWithChildren() {
+        System.out.println("OK+++++++++++++controller+++++++++++++++++++++++");
         //TODO 查询所有一级分类及子分类
         List<PmsProductCategoryWithChildrenItem> items = productCategoryService.listCatelogWithChilder(0);
         return new CommonResult().success(items);

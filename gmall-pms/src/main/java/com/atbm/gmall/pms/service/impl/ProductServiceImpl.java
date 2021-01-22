@@ -16,11 +16,12 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.searchbox.client.JestClient;
-import io.searchbox.core.Delete;
-import io.searchbox.core.DocumentResult;
-import io.searchbox.core.Index;
+import io.searchbox.core.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.lucene.search.join.ScoreMode;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -62,6 +64,9 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
 
     @Autowired
     SkuStockMapper skuStockMapper;
+
+    @Autowired
+    MemberPriceMapper memberPriceMapper;
 
     @Autowired
     JestClient jestClient;
@@ -112,7 +117,7 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
                 new Page<Product>(param.getPageNum(), param.getPageSize()), wrapper);
         PageInfoVo pageInfoVo = new PageInfoVo(page.getTotal(),page.getPages(),param.getPageSize(),
                 page.getRecords(),page.getCurrent());
-
+        System.out.println("OK+++++++++++++++service+++++++++++++++++++++"+pageInfoVo);
         return pageInfoVo;
     }
 /*
@@ -200,7 +205,7 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
     *
     *  */
     @Override
-    public void updatePublishStatus(List<Long> ids, Integer publishStatus) {
+    public void  updatePublishStatus(List<Long> ids, Integer publishStatus) {
         if (publishStatus == 0){
             //下架---->改数据库状态->删ES
             ids.forEach((id)->{
@@ -220,6 +225,148 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
             });
         }
     }
+    /*
+    * 按照商品ID查出商品
+    * */
+    @Override
+    public EsProduct productAllInfo(Long id) {
+        EsProduct esProduct = null;
+        //生成ES使用的操作语句(dsl)query->term->id
+        SearchSourceBuilder builder = new SearchSourceBuilder();
+        builder.query(QueryBuilders.termQuery("id",id));
+        //构建builder语句进行在->PRODUCT_ES_INDEX索引下的->PRODUCT_INFO_ES_TYPE类型->操作
+        Search build = new Search.Builder(builder.toString())
+                .addIndex(EsConstant.PRODUCT_ES_INDEX)
+                .addType(EsConstant.PRODUCT_INFO_ES_TYPE)
+                .build();
+        try {
+            //得出结果
+            SearchResult execute = jestClient.execute(build);
+            //execute.getHits得到hits属性下的值封装到EsProduct
+            List<SearchResult.Hit<EsProduct, Void>> hits = execute.getHits(EsProduct.class);
+            esProduct = hits.get(0).source;
+        } catch (IOException e) {
+
+        }
+        return esProduct;
+    }
+    /*
+     * 按照skuID查出商品
+     * */
+    @Override
+    public EsProduct productSkuInFo(Long id) {
+        EsProduct esProduct = null;
+        //生成ES使用的操作语句(dsl)query->nestedQuery(嵌套内部的查询)->skuproductIofns(被嵌套的属性)
+            //->termsQuery("skuproductIofns属性下的id属性",值)->null(加分项)
+        SearchSourceBuilder builder = new SearchSourceBuilder();
+        builder.query(QueryBuilders.nestedQuery("skuproductIofns",
+                QueryBuilders.termQuery("skuproductIofns.id",id), ScoreMode.None));
+        //构建builder语句进行在->PRODUCT_ES_INDEX索引下的->PRODUCT_INFO_ES_TYPE类型->操作
+        Search build = new Search.Builder(builder.toString())
+                .addIndex(EsConstant.PRODUCT_ES_INDEX)
+                .addType(EsConstant.PRODUCT_INFO_ES_TYPE)
+                .build();
+        try {
+            //得出结果
+            SearchResult execute = jestClient.execute(build);
+            //execute.getHits得到hits属性下的值封装到EsProduct
+            List<SearchResult.Hit<EsProduct, Void>> hits = execute.getHits(EsProduct.class);
+            esProduct = hits.get(0).source;
+        } catch (IOException e) {
+
+        }
+        return esProduct;
+    }
+    /*
+    * 删除/批量删除->商品
+    * */
+    @Override
+    public void deleteProdect(List<Long> ids, Integer deleteStatus) {
+        ids.forEach((id)->{
+            productMapper.deleteById(id);
+        });
+    }
+
+    /*
+     * 新品/批量新品->商品
+     * */
+    @Override
+    public void updateNewStatus(List<Long> ids, Integer newStatus) {
+        ids.forEach((id)->{
+            Product product = new Product();
+            product.setId(id);
+            product.setNewStatus(newStatus);
+            productMapper.updateById(product);
+        });
+    }
+    /*
+     * 推荐/批量推荐->商品
+     * */
+    @Override
+    public void updateRecommendStatus(List<Long> ids, Integer recommendStatus) {
+        ids.forEach((id)->{
+            Product product = new Product();
+            product.setId(id);
+            product.setRecommandStatus(recommendStatus);
+            productMapper.updateById(product);
+        });
+    }
+    /*
+    * 商品回显
+    * */
+    @Override
+    public Product getUpdateInfo(Long id) {
+        Product product = productMapper.selectById(id);
+        return product;
+    }
+    /*
+    * 商品修改
+    * */
+    @Override
+    public void update(Long id, PmsProductParam productParam) {
+
+        //商品基本信息设置
+        Product product = new Product();
+        BeanUtils.copyProperties(productParam,product);
+        productMapper.updateById(product);
+
+        //商品阶梯价格设置
+        ProductLadder productLadder = new ProductLadder();
+        BeanUtils.copyProperties(productParam,productLadder);
+        productLadderMapper.updateById(productLadder);
+
+        //商品阶梯价格设置
+        ProductFullReduction productFullReduction = new ProductFullReduction();
+        BeanUtils.copyProperties(productParam,productFullReduction);
+        productFullReductionMapper.updateById(productFullReduction);
+
+        //商品会员价格设置
+        MemberPrice memberPrice = new MemberPrice();
+        BeanUtils.copyProperties(productParam,memberPrice);
+        memberPriceMapper.updateById(memberPrice);
+
+        //商品的sku库存设置
+        SkuStock skuStock = new SkuStock();
+        BeanUtils.copyProperties(productParam,skuStock);
+        skuStockMapper.updateById(skuStock);
+
+        //商品的sku库存设置
+        ProductAttributeValue productAttributeValue = new ProductAttributeValue();
+        BeanUtils.copyProperties(productParam,productAttributeValue);
+        productAttributeValueMapper.updateById(productAttributeValue);
+    }
+    //商品详情
+    @Override
+    public Product productInfo2(Long id) {
+        Product product = productMapper.selectById(id);
+        return product;
+    }
+
+    @Override
+    public SkuStock skuInfoById(Long skuId) {
+        return skuStockMapper.selectById(skuId);
+    }
+
     /*
      * 抽取方法下架Es
      * */

@@ -287,13 +287,6 @@ public class SearchProductServiceImpl implements SearchProductService {
             }
 
         }
-
-
-
-
-        if(!StringUtils.isEmpty(searchParam.getKeyword())){
-
-        }
         return builder.toString();
     }
 }

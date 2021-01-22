@@ -1,7 +1,10 @@
 package com.atbm.gmall.ums.service;
 
 import com.atbm.gmall.ums.entity.Member;
+import com.atbm.gmall.ums.entity.MemberReceiveAddress;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface MemberService extends IService<Member> {
 
+    Member login(String username, String password);
+
+    List<MemberReceiveAddress> getMemberAddresses(Long id);
+
+    MemberReceiveAddress getMemberAddressesByAddresseId(Long addressId);
 }

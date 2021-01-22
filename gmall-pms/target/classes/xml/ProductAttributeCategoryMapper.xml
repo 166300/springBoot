@@ -6,5 +6,38 @@
     <sql id="Base_Column_List">
         id, name, attribute_count, param_count
     </sql>
-
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.atbm.gmall.pms.entity.ProductAttribute">
+        <id column="id" property="id" />
+        <result column="product_attribute_category_id" property="productAttributeCategoryId" />
+        <result column="name" property="name" />
+        <result column="select_type" property="selectType" />
+        <result column="input_type" property="inputType" />
+        <result column="input_list" property="inputList" />
+        <result column="sort" property="sort" />
+        <result column="filter_type" property="filterType" />
+        <result column="search_type" property="searchType" />
+        <result column="related_status" property="relatedStatus" />
+        <result column="hand_add_status" property="handAddStatus" />
+        <result column="type" property="type" />
+    </resultMap>
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMapa" type="com.atbm.gmall.pms.entity.ProductAttributeCategory">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="attribute_count" property="attributeCount" />
+        <result column="param_count" property="paramCount" />
+    </resultMap>
+    <resultMap id="ExtendResultMap" type="com.atbm.gmall.vo.product.PmsProductAttributeCategoryItem"
+               extends="BaseResultMapa">
+        <collection property="productAttributeList" select="listem"
+                    column="id"></collection>
+    </resultMap>
+    <!--List<PmsProductAttributeCategoryItem> listProductAttributeCategoryItem(Integer 0);-->
+    <select id="listProductAttributeCategoryItem" resultMap="BaseResultMapa">
+        select * from pms_product_attribute_category where id=#{i};
+    </select>
+    <select id="listItem" resultMap="BaseResultMapa">
+        select * from pms_product_attribute where product_attribute_category_id=#{i};
+    </select>
 </mapper>
